@@ -335,12 +335,12 @@ if (!function_exists('active_submenu')) {
 if (!function_exists('get_setting')) {
 
     function get_setting($key = "") {
-        $setting_value = get_array_value(config('Rise')->app_settings_array, $key);
+        $setting_value = get_array_value(config('connex')->app_settings_array, $key);
         if ($setting_value !== NULL) {
             return $setting_value;
         } else {
-            if (isset(config('Rise')->$key)) {
-                return config('Rise')->$key;
+            if (isset(config('connex')->$key)) {
+                return config('connex')->$key;
             } else if (isset(config('App')->$key)) {
                 return config('App')->$key;
             } else {
@@ -1799,7 +1799,7 @@ if (!function_exists('send_message_via_pusher')) {
                 "message" => $message_data
             );
 
-            if ($pusher->trigger('user_' . $to_user_id . '_message_id_' . $message_id . '_channel', 'rise-chat-event', $data)) {
+            if ($pusher->trigger('user_' . $to_user_id . '_message_id_' . $message_id . '_channel', 'connex-chat-event', $data)) {
                 return true;
             }
         } else {
@@ -1821,7 +1821,7 @@ if (!function_exists('send_message_via_pusher')) {
                         </div>"
             );
 
-            if ($pusher->trigger('user_' . $to_user_id . '_message_id_' . $message_id . '_channel', 'rise-chat-typing-event', $message_data)) {
+            if ($pusher->trigger('user_' . $to_user_id . '_message_id_' . $message_id . '_channel', 'connex-chat-typing-event', $message_data)) {
                 return true;
             }
         }

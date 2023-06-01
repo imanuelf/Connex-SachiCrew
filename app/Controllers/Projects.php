@@ -263,7 +263,7 @@ class Projects extends Security_Controller {
     private function init_project_settings($project_id) {
         $settings = $this->Project_settings_model->get_all_where(array("project_id" => $project_id))->getResult();
         foreach ($settings as $setting) {
-            config('Rise')->app_settings_array[$setting->setting_name] = $setting->setting_value;
+            config('connex')->app_settings_array[$setting->setting_name] = $setting->setting_value;
         }
     }
 

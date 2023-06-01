@@ -16,7 +16,7 @@ class Filters extends BaseConfig {
         if (config('App')->csrf_protection) {
             $this->globals['before'] = array(
                 'csrf' => array(
-                    "except" => config('Rise')->app_csrf_exclude_uris
+                    "except" => config('connex')->app_csrf_exclude_uris
                 )
             );
         }

@@ -1,4 +1,4 @@
-<div class="rise-chat-header box">
+<div class="connex-chat-header box">
     <div class="box-content chat-back" id="js-back-to-chat-tabs">
         <i data-feather="chevron-left" class="icon-16"></i>
     </div>
@@ -30,12 +30,12 @@
     </div>
 </div>
 
-<div class="rise-chat-body clearfix">
+<div class="connex-chat-body clearfix">
     <div id="js-chat-messages-container" class="clearfix"></div>
     <div id="js-chat-reply-indicator"></div>
 </div>
 
-<div class="rise-chat-footer">
+<div class="connex-chat-footer">
     <div id="chat-reply-form-dropzone" class="post-dropzone">
         <?php echo form_open(get_uri("messages/reply/1"), array("id" => "chat-message-reply-form", "class" => "general-form", "role" => "form")); ?>
 
@@ -66,13 +66,13 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-        var textarea = document.querySelector('.rise-chat-footer textarea');
-        textarea.addEventListener('keydown', autosizeRISEChatBox);
-        function autosizeRISEChatBox() {
+        var textarea = document.querySelector('.connex-chat-footer textarea');
+        textarea.addEventListener('keydown', autosizeconnexChatBox);
+        function autosizeconnexChatBox() {
             var el = this;
             setTimeout(function () {
                 if (el.scrollHeight < 110) {
-                    $(".rise-chat-body").height(400 - el.scrollHeight);
+                    $(".connex-chat-body").height(400 - el.scrollHeight);
                     el.style.cssText = 'height:' + el.scrollHeight + 'px';
                 }
             });
@@ -82,7 +82,7 @@
 
 
         loadMessages(1);
-        $('.rise-chat-header').mousedown(handle_mousedown);
+        $('.connex-chat-header').mousedown(handle_mousedown);
         $("#js-chat-message-textarea").keypress(function (e) {
             if (e.keyCode === 13 && !e.shiftKey) {
                 $("#chat-message-reply-form").submit();
@@ -158,7 +158,7 @@
 
             var channel = pusher.subscribe("user_" + "<?php echo $login_user->id; ?>" + "_message_id_" + "<?php echo $message_id ?>" + "_channel");
 
-            channel.bind('rise-chat-event',
+            channel.bind('connex-chat-event',
                     function (data) {
                         $.ajax({
                             url: "<?php echo get_uri('messages/view_chat'); ?>",
@@ -176,7 +176,7 @@
                         });
                     });
 
-            channel.bind('rise-chat-typing-event',
+            channel.bind('connex-chat-typing-event',
                     function (data) {
                         $("#js-chat-reply-indicator").html(data);
                         chatScrollToBottom();
@@ -200,7 +200,7 @@
         function handleDragging(e) {
             var left = dragging.offset0.left + (e.pageX - dragging.pageX0);
             var top = dragging.offset0.top + (e.pageY - dragging.pageY0);
-            $(".rise-chat-wrapper").offset({top: top, left: left});
+            $(".connex-chat-wrapper").offset({top: top, left: left});
         }
 
         function handleMouseup(e) {
@@ -213,7 +213,7 @@
         //scroll to bottom only if the foucs on textarea
         var $focused = $(':focus');
         if ($focused && $focused.is("textarea")) {
-            $(".rise-chat-body").animate({scrollTop: 10000000}, 100);
+            $(".connex-chat-body").animate({scrollTop: 10000000}, 100);
         }
     }
 

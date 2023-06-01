@@ -10,7 +10,7 @@ if (get_setting("module_chat") && $can_chat) {
         <span id="js-chat-min-icon" data-type="open" class="chat-min-icon"><i data-feather="message-circle" class="icon-18"></i></span>
     </div>
 
-    <div id="js-rise-chat-wrapper" class="rise-chat-wrapper hide"></div>
+    <div id="js-connex-chat-wrapper" class="connex-chat-wrapper hide"></div>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -34,10 +34,10 @@ if (get_setting("module_chat") && $can_chat) {
                 $("#js-chat-min-icon").attr("data-type", type).html(count ? count : chatIconContent[type]);
 
                 if (type === "open") {
-                    $("#js-rise-chat-wrapper").addClass("hide"); //hide chat box
+                    $("#js-connex-chat-wrapper").addClass("hide"); //hide chat box
                     $("#js-init-chat-icon").removeClass("has-message");
                 } else if (type === "close") {
-                    $("#js-rise-chat-wrapper").removeClass("hide"); //show chat box
+                    $("#js-connex-chat-wrapper").removeClass("hide"); //show chat box
                     $("#js-init-chat-icon").removeClass("has-message");
                 } else if (type === "unread") {
                     $("#js-init-chat-icon").addClass("has-message");
@@ -61,7 +61,7 @@ if (get_setting("module_chat") && $can_chat) {
 
 
             $chatIcon.click(function () {
-                $("#js-rise-chat-wrapper").html("");
+                $("#js-connex-chat-wrapper").html("");
 
                 window.updateLastMessageCheckingStatus();
 
@@ -130,15 +130,15 @@ if (get_setting("module_chat") && $can_chat) {
 
 
 
-            $('body #js-rise-chat-wrapper').on('click', '.js-message-row', function () {
+            $('body #js-connex-chat-wrapper').on('click', '.js-message-row', function () {
                 getActiveChat($(this).attr("data-id"));
             });
 
-            $('body #js-rise-chat-wrapper').on('click', '.js-message-row-of-team-members-tab', function () {
+            $('body #js-connex-chat-wrapper').on('click', '.js-message-row-of-team-members-tab', function () {
                 getChatlistOfUser($(this).attr("data-id"), "team_members");
             });
 
-            $('body #js-rise-chat-wrapper').on('click', '.js-message-row-of-clients-tab', function () {
+            $('body #js-connex-chat-wrapper').on('click', '.js-message-row-of-clients-tab', function () {
                 getChatlistOfUser($(this).attr("data-id"), "clients");
             });
 
@@ -149,13 +149,13 @@ if (get_setting("module_chat") && $can_chat) {
 
             setChatIcon("close"); //show close icon
 
-            appLoader.show({container: "#js-rise-chat-wrapper", css: "bottom: 40%; right: 35%;"});
+            appLoader.show({container: "#js-connex-chat-wrapper", css: "bottom: 40%; right: 35%;"});
             $.ajax({
                 url: "<?php echo get_uri("messages/get_chatlist_of_user"); ?>",
                 type: "POST",
                 data: {user_id: user_id, tab_type: tab_type},
                 success: function (response) {
-                    $("#js-rise-chat-wrapper").html(response);
+                    $("#js-connex-chat-wrapper").html(response);
                     appLoader.hide();
                 }
             });
@@ -166,14 +166,14 @@ if (get_setting("module_chat") && $can_chat) {
             setChatIcon("close"); //show close icon
 
             setCookie("active_chat_id", "");
-            appLoader.show({container: "#js-rise-chat-wrapper", css: "bottom: 40%; right: 35%;"});
+            appLoader.show({container: "#js-connex-chat-wrapper", css: "bottom: 40%; right: 35%;"});
             $.ajax({
                 url: "<?php echo get_uri("messages/chat_list"); ?>",
                 data: {
                     type: "inbox"
                 },
                 success: function (response) {
-                    $("#js-rise-chat-wrapper").html(response);
+                    $("#js-connex-chat-wrapper").html(response);
 
                     if (!trigger_from_user_chat) {
                         $("#chat-inbox-tab-button a").trigger("click");
@@ -192,7 +192,7 @@ if (get_setting("module_chat") && $can_chat) {
         function getActiveChat(message_id) {
             setChatIcon("close"); //show close icon
 
-            appLoader.show({container: "#js-rise-chat-wrapper", css: "bottom: 40%; right: 35%;"});
+            appLoader.show({container: "#js-connex-chat-wrapper", css: "bottom: 40%; right: 35%;"});
             $.ajax({
                 url: "<?php echo get_uri('messages/get_active_chat'); ?>",
                 type: "POST",
@@ -200,7 +200,7 @@ if (get_setting("module_chat") && $can_chat) {
                     message_id: message_id
                 },
                 success: function (response) {
-                    $("#js-rise-chat-wrapper").html(response);
+                    $("#js-connex-chat-wrapper").html(response);
                     appLoader.hide();
                     setCookie("active_chat_id", message_id);
                     $("#js-chat-message-textarea").focus();

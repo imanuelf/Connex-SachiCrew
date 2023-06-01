@@ -546,7 +546,7 @@ class URI
         $number--;
 
         if ($number > count($this->segments) && ! $this->silent) {
-            throw HTTPException::forURISegmentOutOfRange($number);
+            throw HTTPException::forUconnexgmentOutOfRange($number);
         }
 
         return $this->segments[$number] ?? $default;
@@ -571,7 +571,7 @@ class URI
                 return $this;
             }
 
-            throw HTTPException::forURISegmentOutOfRange($number);
+            throw HTTPException::forUconnexgmentOutOfRange($number);
         }
 
         $this->segments[$number] = $value;

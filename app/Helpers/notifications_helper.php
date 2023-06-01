@@ -974,7 +974,7 @@ if (!function_exists('send_push_notifications')) {
             if ($push_notify_to) {
                 $push_notify_to_array = explode(",", $push_notify_to);
                 foreach ($push_notify_to_array as $user_id) {
-                    if ($pusher->trigger('user_' . $user_id . '_channel', 'rise-pusher-event', $data)) {
+                    if ($pusher->trigger('user_' . $user_id . '_channel', 'connex-pusher-event', $data)) {
                         $correct_credentials = true;
                     }
                 }

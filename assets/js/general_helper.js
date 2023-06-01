@@ -176,7 +176,7 @@ $(document).ready(function () {
 
         var channel = pusher.subscribe("user_" + AppHelper.userId + "_channel");
 
-        channel.bind('rise-pusher-event', function (data) {
+        channel.bind('connex-pusher-event', function (data) {
 
             if (data) {
                 //show browser notification for https. otherwise show app notification

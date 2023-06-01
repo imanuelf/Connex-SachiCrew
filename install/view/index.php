@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="fairsketch">
         <link rel="icon" href="../assets/images/favicon.png" />
-        <title>RISE - Ultimate Project Manager & CRM Installation</title>
+        <title>connex - Ultimate Project Manager & CRM Installation</title>
         <link rel='stylesheet' type='text/css' href='../assets/bootstrap/css/bootstrap.min.css' />
 
         <link rel='stylesheet' type='text/css' href='install.css' />
@@ -23,7 +23,7 @@
 
             <div class="card card-install">
                 <div class="card-header text-center">                    
-                    <h2> RISE - Ultimate Project Manager & CRM Installation</h2>
+                    <h2> connex - Ultimate Project Manager & CRM Installation</h2>
                 </div>
                 <div class="card-body no-padding">
                     <div class="tab-container clearfix">
@@ -328,7 +328,7 @@
                                             <div class="row">
                                                 <label for="dbprefix" class=" col-md-3">Database Prefix</label>
                                                 <div class=" col-md-9">
-                                                    <input id="dbprefix" type="text" value="rise_" name="dbprefix" class="form-control" placeholder="Database Prefix" maxlength="21" />
+                                                    <input id="dbprefix" type="text" value="connex_" name="dbprefix" class="form-control" placeholder="Database Prefix" maxlength="21" />
                                                 </div>
                                             </div>
                                         </div>
@@ -403,7 +403,7 @@
                         <div role="tabpanel" class="tab-pane" id="finished-tab">
                             <div class="section">
                                 <div class="clearfix">
-                                    <i data-feather="check-circle" height="2.5rem" width="2.5rem" stroke-width="3" class='status mr10'></i><span class="pull-left"  style="line-height: 50px;">Congratulation! You have successfully installed RISE - Ultimate Project Manager</span>  
+                                    <i data-feather="check-circle" height="2.5rem" width="2.5rem" stroke-width="3" class='status mr10'></i><span class="pull-left"  style="line-height: 50px;">Congratulation! You have successfully installed connex - Ultimate Project Manager</span>  
                                 </div>
 
                                 <div style="margin: 15px 0 15px 55px; color: #d73b3b;">

@@ -493,13 +493,13 @@ pre {
 .init-chat-icon svg {
   color: #ccc;
 }
-.rise-chat-wrapper {
+.connex-chat-wrapper {
   background: #272B35;
 }
-.rise-chat-wrapper .message-row {
+.connex-chat-wrapper .message-row {
   border-bottom-color: #2f3541;
 }
-.rise-chat-wrapper .message-row:hover {
+.connex-chat-wrapper .message-row:hover {
   background: #20242C;
 }
 .chat-other .chat-msg {
@@ -508,11 +508,11 @@ pre {
 .chat-me .chat-msg {
   background-color: #5867DD;
 }
-.rise-chat-footer {
+.connex-chat-footer {
   background: #272B35;
   border-color: #2f3541;
 }
-.rise-chat-footer textarea {
+.connex-chat-footer textarea {
   background: #272B35;
   color: #ccc;
 }

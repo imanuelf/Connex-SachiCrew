@@ -231,14 +231,14 @@
   right: auto;
   left: 20px;
 }
-.rise-chat-wrapper {
+.connex-chat-wrapper {
   right: auto;
   left: 80px;
 }
-.rise-chat-header .chat-back svg {
+.connex-chat-header .chat-back svg {
   transform: rotate(180deg);
 }
-.rise-chat-footer textarea {
+.connex-chat-footer textarea {
   padding: 10px 35px 10px 10px;
 }
 .chat-other .chat-msg, .close {

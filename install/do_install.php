@@ -36,7 +36,7 @@ if (isset($_POST)) {
 
 
     //validate purchase code
-    $verification = verify_rise_purchase_code($purchase_code);
+    $verification = verify_connex_purchase_code($purchase_code);
 
     if (!$verification || $verification != "verified") {
         echo json_encode(array("success" => false, "message" => "Please enter a valid purchase code."));
@@ -144,9 +144,9 @@ if (isset($_POST)) {
     exit();
 }
 
-function verify_rise_purchase_code($code) {
+function verify_connex_purchase_code($code) {
     $code = urlencode($code);
-    $url = "https://releases.fairsketch.com/rise/?type=install&code=" . $code . "&domain=" . $_SERVER['HTTP_HOST'];
+    $url = "https://releases.fairsketch.com/connex/?type=install&code=" . $code . "&domain=" . $_SERVER['HTTP_HOST'];
 
     $ch = curl_init();
 

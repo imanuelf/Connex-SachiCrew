@@ -147,7 +147,7 @@ class HTTPException extends FrameworkException
      *
      * @return HTTPException
      */
-    public static function forURISegmentOutOfRange(int $segment)
+    public static function forUconnexgmentOutOfRange(int $segment)
     {
         return new static(lang('HTTP.segmentOutOfRange', [$segment]));
     }

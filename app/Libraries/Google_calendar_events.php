@@ -346,7 +346,7 @@ class Google_calendar_events {
         foreach ($events as $event) {
             $google_event_id = $event->recurringEventId ? $event->recurringEventId : $event->id;
 
-            //if the event is deleted from Google, delete from RISE too
+            //if the event is deleted from Google, delete from connex too
             if ($event->status == "cancelled") {
                 $this->_delete_calendar_events($user_id, $google_event_id);
                 continue;

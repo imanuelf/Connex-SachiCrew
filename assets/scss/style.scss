@@ -2227,7 +2227,7 @@ svg:not(.gantt) {
     opacity: 0.2;
     box-shadow: 1px 2px 1px  rgba(0, 0, 0, 0.3);
 }
-.rise-chat-wrapper{
+.connex-chat-wrapper{
     width: 330px;
     height: 450px;
     background: #fff;
@@ -2253,7 +2253,7 @@ svg:not(.gantt) {
     }
 }
 
-.rise-chat-header{
+.connex-chat-header{
     box-shadow:0px 1px 2px rgba(0,0,0,0.1);
 
     .nav-tabs>li{
@@ -2304,7 +2304,7 @@ svg:not(.gantt) {
     font-size: 30px;
     line-height: 18px;
 }
-.rise-chat-body{
+.connex-chat-body{
     height:350px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -2322,7 +2322,7 @@ svg:not(.gantt) {
     }
 }
 
-.rise-chat-footer {
+.connex-chat-footer {
     background: #fff;
     bottom: 0;
     position: relative;
@@ -3049,7 +3049,7 @@ table .error{
     white-space: nowrap;
 }
 
-.rise-cart-body{
+.connex-cart-body{
     height: 396px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -3059,7 +3059,7 @@ table .error{
     user-select: none;
 }
 
-.init-cart-icon, .rise-cart-wrapper{
+.init-cart-icon, .connex-cart-wrapper{
     transition: 0.3s;
 }
 
@@ -3068,7 +3068,7 @@ table .error{
     margin-left: 8px !important;
 }
 
-.rise-cart-wrapper{
+.connex-cart-wrapper{
     width: 480px;
 }
 
