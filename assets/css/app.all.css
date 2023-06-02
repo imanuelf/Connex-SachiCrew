@@ -5758,7 +5758,7 @@ table .error {
   display: inline-block;
 }
 .footer a {
-  
+  padding: 10px;
 }
 .editable-input .editable-date {
   border-radius: 2px;

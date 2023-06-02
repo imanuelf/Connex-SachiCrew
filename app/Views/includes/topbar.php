@@ -12,7 +12,7 @@
                     </a>
                 </li>
 
-                <?php
+                <!-- <?php
                 //get the array of hidden topbar menus
                 $hidden_topbar_menus = explode(",", get_setting("user_" . $user . "_hidden_topbar_menus"));
 
@@ -28,7 +28,7 @@
                 if (!in_array("dashboard_customization", $hidden_topbar_menus) && (get_setting("disable_new_dashboard_icon") != 1)) {
                     echo view("dashboards/list/topbar_icon");
                 }
-                ?>
+                ?> -->
 
                 <?php
                 if (has_my_open_timers()) {
@@ -53,13 +53,13 @@
                         </li>
                     <?php } ?>
 
-                    <?php
+                    <!-- <?php
                     if (!in_array("quick_add", $hidden_topbar_menus)) {
                         echo view("settings/topbar_parts/quick_add");
                     }
-                    ?>
+                    ?> -->
 
-                    <?php if (!in_array("language", $hidden_topbar_menus) && (($login_user->user_type == "staff" && !get_setting("disable_language_selector_for_team_members")) || ($login_user->user_type == "client" && !get_setting("disable_language_selector_for_clients")))) { ?>
+                    <!-- <?php if (!in_array("language", $hidden_topbar_menus) && (($login_user->user_type == "staff" && !get_setting("disable_language_selector_for_team_members")) || ($login_user->user_type == "client" && !get_setting("disable_language_selector_for_clients")))) { ?>
 
                         <li class="nav-item dropdown">
                             <?php echo js_anchor("<i data-feather='globe' class='icon'></i>", array("id" => "personal-language-icon", "class" => "nav-link dropdown-toggle", "data-bs-toggle" => "dropdown")); ?>
@@ -90,7 +90,7 @@
                             </ul>
                         </li>
 
-                    <?php } ?>
+                    <?php } ?> -->
 
                     <?php if (can_access_reminders_module()) { ?>
                         <li class="nav-item dropdown">

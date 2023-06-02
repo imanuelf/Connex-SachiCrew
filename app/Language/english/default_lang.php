@@ -287,7 +287,7 @@ $lang["password_reset_successfully"] = "Your password has been reset successfull
 $lang["account_created"] = "Your account has been created successfully!";
 $lang["invitation_expaired_message"] = "The invitation has expired or something went wrong";
 $lang["account_already_exists_for_your_mail"] = "Account already exists for your email address.";
-$lang["create_an_account_as_a_new_client"] = "Create an account as a new client.";
+$lang["create_an_account_as_a_new_client"] = "Create an account as a new staff.";
 $lang["create_an_account_as_a_team_member"] = "Create an account as a team member.";
 $lang["create_an_account_as_a_client_contact"] = "Create an account as a client contact.";
 
