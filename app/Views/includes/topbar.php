@@ -12,7 +12,7 @@
                     </a>
                 </li>
 
-                <!-- <?php
+                <?php
                 //get the array of hidden topbar menus
                 $hidden_topbar_menus = explode(",", get_setting("user_" . $user . "_hidden_topbar_menus"));
 
@@ -28,7 +28,7 @@
                 if (!in_array("dashboard_customization", $hidden_topbar_menus) && (get_setting("disable_new_dashboard_icon") != 1)) {
                     echo view("dashboards/list/topbar_icon");
                 }
-                ?> -->
+                ?>
 
                 <?php
                 if (has_my_open_timers()) {
