@@ -3633,8 +3633,7 @@ i.online {
   border-color: #E6E6E6;
 }
 .btn-primary {
-  border-color: #6690F4;
-  background-color: #6690F4;
+  background: linear-gradient(102.94deg, #BF66DA 0%, #6125FE 130.31%);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #4076f2;
@@ -5759,7 +5758,7 @@ table .error {
   display: inline-block;
 }
 .footer a {
-  padding: 10px;
+  
 }
 .editable-input .editable-date {
   border-radius: 2px;

@@ -1,4 +1,5 @@
-<div class="card bg-white mb15">
+<div class="col-12">
+    <div class="card bg-white mb15">
     <div class="card-header text-center">
         <?php if (get_setting("show_logo_in_signin_page") === "yes") { ?>
             <img class="p20 mw100p" src="<?php echo get_logo_url(); ?>" />
@@ -71,6 +72,7 @@
         app_hooks()->do_action('app_hook_signin_extension');
         ?>
     </div>
+</div>
 </div>
 
 
