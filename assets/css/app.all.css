@@ -1342,6 +1342,7 @@ img.mfp-img {
   right: 0;
   left: 250px;
   min-height: 65px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15) !important;
 }
 .logo-collapsed {
   display: none;
@@ -1362,7 +1363,7 @@ img.mfp-img {
   font-weight: 400;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
-  background: #fff;
+  background: #e6c1f1;
 }
 .sidebar-brand {
   padding: 0.9rem 2.9rem;
@@ -1371,9 +1372,7 @@ img.mfp-img {
   position: fixed;
   text-align: center;
   z-index: 999;
-  background-color: #fff;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  background-color: #e6c1f1;
 }
 .brand-logo-mini {
   display: none;
@@ -1381,6 +1380,7 @@ img.mfp-img {
 .sidebar-scroll {
   margin-top: 65px;
   background: #f3e0f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sidebar-menu {
   padding: 10px 0;
@@ -1440,7 +1440,7 @@ img.mfp-img {
 .sidebar-menu li.active > a {
   color: #51006a !important;
   background-color: #e1bef3;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 27px 80px rgba(0, 0, 0, 0.15), 0px 8.13971px 24.1177px rgba(0, 0, 0, 0.0977383), 0px 3.38082px 10.0172px rgba(0, 0, 0, 0.075), 0px 1.22278px 3.62304px rgba(0, 0, 0, 0.0522617);
 }
 .sidebar-menu .badge {
   float: right;
@@ -3867,8 +3867,8 @@ i.online {
   padding: 10px 15px;
 }
 .widget-container .card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04) !important;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.04) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); !important;
   
 }
 .bg-white {
@@ -3963,7 +3963,7 @@ i.online {
   background: #f2f4f6;
 }
 .bg-info {
-  background-color: #22B9FF !important;
+  background-color: #51006a !important;
 }
 .bg-primary {
   background-color: #6690F4 !important;
