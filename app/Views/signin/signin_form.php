@@ -1,6 +1,6 @@
 <div class="col-12 ">
     <div class="card bg-white">
-    <div class="card-header text-center">
+    <div class="card-header bg-white text-center">
         <img class="p20 mw100p" src="/assets/images/logo_lengkap.png" />
         <h5>Collaboration Simplified, Success Amplified</h5>
     </div>
