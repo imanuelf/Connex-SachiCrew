@@ -1,11 +1,8 @@
-<div class="col-12">
-    <div class="card bg-white mb15">
+<div class="col-12 ">
+    <div class="card bg-white">
     <div class="card-header text-center">
-        <?php if (get_setting("show_logo_in_signin_page") === "yes") { ?>
-            <img class="p20 mw100p" src="<?php echo get_logo_url(); ?>" />
-        <?php } else { ?>
-            <h2><?php echo app_lang('signin'); ?></h2>
-        <?php } ?>
+        <img class="p20 mw100p" src="/assets/images/logo_lengkap.png" />
+        <h5>Collaboration Simplified, Success Amplified</h5>
     </div>
     <div class="card-body p30 rounded-bottom">
         <?php echo form_open("signin/authenticate", array("id" => "signin-form", "class" => "general-form", "role" => "form")); ?>
@@ -61,16 +58,16 @@
 
         <button class="w-100 btn btn-lg btn-primary" type="submit"><?php echo app_lang('signin'); ?></button>
 
-        <?php echo form_close(); ?>
-        <div class="mt5"><?php echo anchor("signin/request_reset_password", app_lang("forgot_password")); ?></div>
+        <!--<?php echo form_close(); ?>-->
+        <!--<div class="mt5"><?php echo anchor("signin/request_reset_password", app_lang("forgot_password")); ?></div>-->
 
-        <?php if (!get_setting("disable_client_signup")) { ?>
-            <div class="mt20"><?php echo app_lang("you_dont_have_an_account") ?> &nbsp; <?php echo anchor("signup", app_lang("signup")); ?></div>
-        <?php } ?>
+        <!--<?php if (!get_setting("disable_client_signup")) { ?>-->
+        <!--    <div class="mt20"><?php echo app_lang("you_dont_have_an_account") ?> &nbsp; <?php echo anchor("signup", app_lang("signup")); ?></div>-->
+        <!--<?php } ?>-->
 
-        <?php
+        <!--<?php
         app_hooks()->do_action('app_hook_signin_extension');
-        ?>
+        ?>-->
     </div>
 </div>
 </div>
