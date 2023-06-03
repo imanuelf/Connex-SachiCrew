@@ -107,9 +107,9 @@
             $(this).trigger("submit");
         });
 
-        $("#next-button").click(function () {
-            showAddMultipleTaskModal();
-        });
+        // $("#next-button").click(function () {
+        //     showAddMultipleTaskModal();
+        // });
 
         function showAddMultipleTaskModal() {
             var $addMultipleTasksLink = $("#link-of-add-task-modal").find("a");
