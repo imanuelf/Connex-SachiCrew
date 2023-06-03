@@ -3875,7 +3875,7 @@ i.online {
   border-color: #f2f4f6;
 }
 .bg-white .card-header {
-  background: linear-gradient(90.1deg, rgba(193, 101, 221, 0.4) 0%, rgba(92, 39, 254, 0.4) 100%), #FFFFFF;  font-weight: bold;
+  background-color: #fff;
   border-color: #eef6f9;
   padding: 12px 16px;
 }
